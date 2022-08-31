@@ -2,6 +2,7 @@ extends layout
 
 block content
   h1= title
+  a(href= "/new")= "Send a message!"
   each val in messages
       header= val.user
       p= val.text
