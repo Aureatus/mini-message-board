@@ -20,7 +20,7 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/new", function (req, res, next) {
-  res.render("form");
+  res.render("form", { title: "Mini Messageboard" });
 });
 
 module.exports = router;
