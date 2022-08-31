@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= "Send a message"
+    form(method="POST" action="/new")
+      label= "Enter your name"
+        input(type="text"  name="userName")
+      label= "Enter your message"
+        input(type="text"  name="messageText")
+      input(type="submit", value="Submit")
